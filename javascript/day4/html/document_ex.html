@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="hello">Hello</h1>
+    <button onclick="setColorById('hello','red')" class="btn red" id="red">Red</button>
+    <button onclick="setColorById('hello','blue')" class="btn blue" id="blue">Blue</button>
+    <button onclick="setColorById('hello','green')" class="btn green" id="green">Green</button>
+    <button onclick="setColorById('hello','black')" class="btn black" id="black">Black</button>
+
+    <h1 class="title">안녕</h1>
+    <h1 class="title" id="center">빨간 운동화</h1>
+    <h1 class="title">레몬트리</h1>
+
+    <button onclick="setColorById('center','red')" class="btn red" >Center:Red</button>
+    <button onclick="setColorById('center','blue')" class="btn blue" >Center:Blue</button>
+    <button onclick="setColorById('center','green')" class="btn green " >Center:Green</button>
+    <button onclick="setColorById('center','black')" class="btn black" >Center:Black</button>
+    <br>
+    <button onclick="setColorByClassName('title','red')" class="btn red" >All:Red</button>
+    <button onclick="setColorByClassName('title','blue')" class="btn blue" >All:Blue</button>
+    <button onclick="setColorByClassName('title','green')" class="btn green" >All:Green</button>
+    <button onclick="setColorByClassName('title','black')" class="btn black" >All:Black</button>
+
+    <script src="../js/document_ex.js" type="text/javascript"></script>
+</body>
+</html>
