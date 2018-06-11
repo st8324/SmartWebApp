@@ -40,6 +40,47 @@
             <div class="information" id="inforPwdConfirm">
                 비밀번호와 비밀번호 확인이 일치하지 않습니다.
             </div>
+            <div>
+                <input type="radio" name="gender" id="male" value="male" checked/>
+                <label for="male"> 남성</label>
+                <input type="radio" name="gender" id="female" value="female"/>
+                <label for="female"> 여성</label>
+            </div>
+            <div>
+                <input type="text" class="form-control year" id="year" name="year" 
+                placeholder="년도">
+                <select class="form-control month" id="month">
+                    <option>월</option>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                    <option>6</option>
+                    <option>7</option>
+                    <option>8</option>
+                    <option>9</option>
+                    <option>10</option>
+                    <option>11</option>
+                    <option>12</option>
+                </select>
+                <input type="text" class="form-control day" id="day" name="day" 
+                placeholder="일">
+            </div>
+            <div class="information" id="inforBirth">
+            </div>
+
+            <div>
+                <select class="form-control country-code" id="countryCode" disabled>
+                        <option>+82</option>
+                </select>
+                <input type="text" class="form-control number" id="number" name="number" 
+                placeholder="휴대전화번호">
+                <input type="button" class="form-control certification" value="인증"/>
+            </div>
+            <div class="information" id="inforNumber">
+                필수 정보입니다.
+            </div>
             <button type="submit" class="btn btn-primary">회원가입</button>
         </form>
     </div>
