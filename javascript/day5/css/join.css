@@ -1,0 +1,10 @@
+@charset 'utf-8';
+
+.information{
+    color: red;
+    margin-bottom: 10px;
+    display: none;
+}
+.form-group{
+    margin-bottom: 0px;
+}

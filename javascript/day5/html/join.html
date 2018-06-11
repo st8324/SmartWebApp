@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/join.css">
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h2>회원가입</h2>
+        <form action="https://www.naver.com" method="" id="formTag">
+            <div class="form-group">
+                <label for="usr">아이디</label>
+                <input type="text" class="form-control" id="usr" name="username">
+            </div>
+            <div class="information" id="inforId">
+                아이디는 5~10글자이고, 아이디 첫글자는 영문자이어야 합니다.
+            </div>
+            <div class="form-group">
+                <label for="pwd">비밀번호</label>
+                <input type="password" class="form-control" id="pwd" name="password">
+            </div>
+            <div class="information" id="inforPwd">
+                비밀번호는 8~20글자이고, 영문자와 숫자가 1개이상씩 들어가야합니다.
+            </div>
+            <div class="form-group">
+                <label for="pwdConfirm">비밀번호 확인</label>
+                <input type="password" class="form-control" id="pwdConfirm" name="passwordConfirm">
+            </div>
+            <div class="information" id="inforPwdConfirm">
+                비밀번호와 비밀번호 확인이 일치하지 않습니다.
+            </div>
+            <button type="submit" class="btn btn-primary">회원가입</button>
+        </form>
+    </div>
+    
+    <script src="../js/join.js" type="text/javascript">
+    </script>
+</body>
+</html>
