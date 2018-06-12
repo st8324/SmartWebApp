@@ -19,20 +19,20 @@ formTag.onsubmit = function(){
     var inforNumber = document.getElementById('inforNumber');
 
     
-    inforPwd.style.display = 'none';
+    
     inforPwdConfirm.style.display = 'none';
     inforBirth.style.display = 'none';
     inforNumber.style.display = 'none';
 
     var isOk = true;
-    var pwdRegex = /^(?=\w{8,20}$)\w*(\d[A-z]|[A-z]\d)\w*$/;
+    
 
-    //id의 길이가 0이면
+    //id 유효성 검사
     if(!checkValidId(id)){
         isOk = false;
     }
-    if(pwd.length == 0 || !pwdRegex.test(pwd)){
-        inforPwd.style.display = 'block';
+    //pwd 유효성 검사
+    if(!checkValidPw(pwd)){
         isOk = false;
     }
     if(pwd != pwdConfirm){
@@ -79,6 +79,17 @@ function checkValidId(id){
     inforId.style.display = 'none';
     if(id.length == 0 || !idRegex.test(id)){
         inforId.style.display = 'block';
+        return false;
+    }
+    return true;
+}
+function checkValidPw(pwd){
+    var pwdRegex = /^(?=\w{8,20}$)\w*(\d[A-z]|[A-z]\d)\w*$/;
+    var inforPwd = document.getElementById('inforPwd');
+    
+    inforPwd.style.display = 'none';
+    if(pwd.length == 0 || !pwdRegex.test(pwd)){
+        inforPwd.style.display = 'block';
         return false;
     }
     return true;
