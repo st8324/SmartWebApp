@@ -48,3 +48,10 @@ function getRes(){
             = cal(num1Value, opValue, num2Value);
     }
 }
+function clears(){
+    numPos = 1;
+    document.getElementById('num1').value = '0';
+    document.getElementById('num2').value = '0';
+    document.getElementById('res').value = '0';
+    document.getElementById('op').value = '';
+}
