@@ -18,19 +18,17 @@ formTag.onsubmit = function(){
     var inforBirth = document.getElementById('inforBirth');
     var inforNumber = document.getElementById('inforNumber');
 
-    inforId.style.display = 'none';
+    
     inforPwd.style.display = 'none';
     inforPwdConfirm.style.display = 'none';
     inforBirth.style.display = 'none';
     inforNumber.style.display = 'none';
 
     var isOk = true;
-    var idRegex = /^[a-zA-Z]\w{4,9}$/;
     var pwdRegex = /^(?=\w{8,20}$)\w*(\d[A-z]|[A-z]\d)\w*$/;
 
     //id의 길이가 0이면
-    if(id.length == 0 || !idRegex.test(id)){
-        inforId.style.display = 'block';
+    if(!checkValidId(id)){
         isOk = false;
     }
     if(pwd.length == 0 || !pwdRegex.test(pwd)){
@@ -72,4 +70,16 @@ function maxDay(month){
         default:
             return 30;
     }
+}
+/* ID의 유효성을 검사 */
+function checkValidId(id){
+    var idRegex = /^[a-zA-Z]\w{4,9}$/;
+    var inforId = document.getElementById('inforId');
+
+    inforId.style.display = 'none';
+    if(id.length == 0 || !idRegex.test(id)){
+        inforId.style.display = 'block';
+        return false;
+    }
+    return true;
 }
