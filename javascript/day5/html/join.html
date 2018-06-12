@@ -51,8 +51,8 @@
             </div>
             <div>
                 <input type="text" class="form-control year" id="year" name="year" 
-                placeholder="년도">
-                <select class="form-control month" id="month">
+                placeholder="년도" onchange="checkValidBirth()">
+                <select class="form-control month" id="month" onchange="checkValidBirth()">
                     <option>월</option>
                     <option>1</option>
                     <option>2</option>
@@ -68,7 +68,7 @@
                     <option>12</option>
                 </select>
                 <input type="text" class="form-control day" id="day" name="day" 
-                placeholder="일">
+                placeholder="일" onchange="checkValidBirth()">
             </div>
             <div class="information" id="inforBirth">
             </div>
@@ -78,7 +78,7 @@
                         <option>+82</option>
                 </select>
                 <input type="text" class="form-control number" id="number" name="number" 
-                placeholder="휴대전화번호">
+                placeholder="휴대전화번호" onchange="checkValidNumber(this.value)">
                 <input type="button" class="form-control certification" value="인증"/>
             </div>
             <div class="information" id="inforNumber">
