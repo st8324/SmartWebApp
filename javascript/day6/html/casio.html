@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/casio.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="text-center">
+            <h1>계산기</h1>
+        </div>
+        <div class="form-group text-center">
+            <input type="text" class="form-control" id="num1"  value="0" readonly>
+            <input type="text" class="form-control text-center" id="op" readonly>
+            <input type="text" class="form-control" id="num2"  value="0" readonly>
+            <input type="text" class="form-control" id="res"  value="0" readonly>
+        </div>
+        <div class="form-group button text-center">
+            <input type="text" class="form-control text-center" readonly value="1" onclick="setNum(this.value)">
+            <input type="text" class="form-control text-center" readonly value="2" onclick="setNum(this.value)">
+            <input type="text" class="form-control text-center" readonly value="3" onclick="setNum(this.value)">
+            <input type="text" class="form-control text-center" readonly value="+" onclick="setOp(this.value)">
+        </div>
+        <div class="form-group button text-center">
+            <input type="text" class="form-control text-center" readonly value="4" onclick="setNum(this.value)">
+            <input type="text" class="form-control text-center" readonly value="5" onclick="setNum(this.value)">
+            <input type="text" class="form-control text-center" readonly value="6" onclick="setNum(this.value)">
+            <input type="text" class="form-control text-center" readonly value="-" onclick="setOp(this.value)">
+        </div>
+        <div class="form-group button text-center">
+            <input type="text" class="form-control text-center" readonly value="7" onclick="setNum(this.value)">
+            <input type="text" class="form-control text-center" readonly value="8" onclick="setNum(this.value)">
+            <input type="text" class="form-control text-center" readonly value="9" onclick="setNum(this.value)">
+            <input type="text" class="form-control text-center" readonly value="*" onclick="setOp(this.value)">
+        </div>
+        <div class="form-group button text-center">
+            <input type="text" class="form-control text-center" readonly value="0" onclick="setNum(this.value)">
+            <input type="text" class="form-control text-center" readonly value="clear">
+            <input type="text" class="form-control text-center" readonly value="=" onclick="getRes()">
+            <input type="text" class="form-control text-center" readonly value="/" onclick="setOp(this.value)">
+        </div>
+    </div>
+    <script src="../js/casio.js"></script>
+</body>
+</html>

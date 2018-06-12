@@ -1,0 +1,18 @@
+.form-control{
+    width: 100px;
+    display: inline-block;
+    padding: 0;
+}
+.form-control[readonly] {
+    background-color: white;
+    opacity: 1;
+}
+.form-group.button{
+    margin-bottom: 10px;
+}
+#num1,#num2,#res{
+    text-align: right;
+}
+.form-control:hover{
+    cursor: pointer;
+}
