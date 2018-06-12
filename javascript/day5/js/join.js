@@ -20,13 +20,13 @@ formTag.onsubmit = function(){
 
     
     
-    inforPwdConfirm.style.display = 'none';
+    
     inforBirth.style.display = 'none';
     inforNumber.style.display = 'none';
 
     var isOk = true;
     
-
+    
     //id 유효성 검사
     if(!checkValidId(id)){
         isOk = false;
@@ -35,8 +35,8 @@ formTag.onsubmit = function(){
     if(!checkValidPw(pwd)){
         isOk = false;
     }
-    if(pwd != pwdConfirm){
-        inforPwdConfirm.style.display = 'block';
+    //비밀번호와 비밀번호 확인이 같은지를 검사
+    if(!checkValidPwdConfirm(pwdConfirm)){
         isOk = false;
     }
     
@@ -86,10 +86,23 @@ function checkValidId(id){
 function checkValidPw(pwd){
     var pwdRegex = /^(?=\w{8,20}$)\w*(\d[A-z]|[A-z]\d)\w*$/;
     var inforPwd = document.getElementById('inforPwd');
-    
+
     inforPwd.style.display = 'none';
     if(pwd.length == 0 || !pwdRegex.test(pwd)){
         inforPwd.style.display = 'block';
+        return false;
+    }
+    return true;
+}
+/* 비밀번호와 비밀번호 확인 같은지를 확인하는 함수 */
+function checkValidPwdConfirm(pwdConfirm){
+    //비밀번호
+    var pwd = document.getElementById('pwd').value;
+    //비밀번호와 일치하지 않을 때 보여줄 문구
+    var inforPwdConfirm = document.getElementById('inforPwdConfirm');
+    inforPwdConfirm.style.display = 'none';
+    if(pwd != pwdConfirm){
+        inforPwdConfirm.style.display = 'block';
         return false;
     }
     return true;
