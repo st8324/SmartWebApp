@@ -4,6 +4,7 @@
     height: 100%;
     background-image: url(/images/main_visual_img03.gif);
     background-size:cover;
+    background-repeat: no-repeat;
     animation-name: backgroundAni;
     animation-duration: 10s;
     animation-iteration-count: infinite;
