@@ -3,16 +3,15 @@ body.dark { background: rgba(0,0,0,.4); }
 
 #hamburger-wrapper {
   float: right;
-  margin-top: -30px;
+  padding: 3px 10px;
 }
 #hamburger {
   cursor: pointer;
-  font-size: 3em;
 }
 #close-sidenav {
   cursor: pointer;
-  font-size: 3em;
-  margin-top: -28px;
+  font-size: 2em;
+  margin-top: -15px;
   float: right;
 }
 #sidenav {
@@ -31,7 +30,8 @@ body.dark { background: rgba(0,0,0,.4); }
   color: black;
   display: block;
   text-decoration: none;
-  padding: 1em;
+  padding: 10px;
+  height: 50px;
 }
 #sidenav header { 
     background: rgb(31, 31, 31); 
@@ -41,12 +41,37 @@ body.dark { background: rgba(0,0,0,.4); }
     background-image: url(/images/top_logo.png);
     background-repeat: no-repeat;
     background-position: center;
-    background-size: 200px auto;
+    /*background-size: 200px auto;*/
 }
 #sidenav a:hover { 
     background-color: wheat;
     color: violet;
+    border-bottom: solid 1px #ccc;
+    font-weight: bold;
 }
 #sidenav li{
-    border-bottom: solid 1px gray;
+    border-bottom: solid 1px #ccc;
+    text-align: center;
+    height: 50px;
+}
+.arrows{
+  float: right;
+}
+.main-nav{
+  background-color: #ffd800;
+  font-size: 22px;
+  height: 45px;
+  text-align: center;
+}
+.back{
+  border: none;
+  background: none;
+  text-decoration: none;
+  width: 45px;
+  height: 45px;
+  float: left;
+}
+.title{
+  display: inline-block;
+  margin-top: 3px;
 }
