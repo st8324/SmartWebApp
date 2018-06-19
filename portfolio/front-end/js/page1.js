@@ -6,3 +6,6 @@ $("#close-sidenav").click(function() {
 	$("#sidenav").css("right", "-260px");
   $("body").removeClass("dark");
 });
+$('.carousel').carousel({
+  interval: 2000
+});

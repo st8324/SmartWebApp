@@ -75,3 +75,22 @@ body.dark { background: rgba(0,0,0,.4); }
   display: inline-block;
   margin-top: 3px;
 }
+
+.menu{
+  height: 40px;
+  background-color: #2f2d2d;
+  color: white;
+  text-decoration: none;
+  padding: 5px 10px 5px 10px;
+}
+.inner-menu{
+  display: inline-block;
+  margin-right: 15px;
+}
+.container-contents{
+  padding: 0 10px;
+}
+.sub-title{
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
