@@ -5,6 +5,9 @@
 body{
     font-family: "Nanum Gothic", sans-serif;
 }
+::-webkit-scrollbar{
+    width: 0px;
+}
 /* 클래스 css */
 .background-images{
     content:'';
@@ -14,7 +17,7 @@ body{
     position: absolute;
     background-size:cover;
     background-position:50% 50%;
-
+    opacity: 0.4;
     animation-name: aniBackground;
     animation-duration: 10s;
     animation-iteration-count: infinite;
@@ -22,67 +25,54 @@ body{
     -webkit-animation-duration: 10s;
     -webkit-animation-iteration-count: infinite;
 }
-/* 네비게이션 css */
-.navbar{
-    font-size: 22px;
-    height: 45px;
-    text-align: center;
-    padding: 0;
+.container-fluid{
+    padding: 0 10%;
+    color: #fff;
+    background: none;
+    position: relative;
+}
+.title{
     font-weight: bold;
+    text-align: center;
 }
-#close-sidenav {
-    cursor: pointer;
-    font-size: 2em;
-    margin-top: -15px;
-    float: right;
-    width: 20px;
+.font-yello{
+    color: yellow;
 }
-#sidenav {
-    height: 100%; width: 260px;
-    top: 0; right: -260px;
-    background: white;
-    position: fixed;
-    transition: 0.4s;
-    z-index: 10;
+.address{
+    text-align: center;
+    color: yellow;
+    font-size: 20px;
+    margin: 40px 0 0 0;
 }
-#sidenav ul { 
-    margin: 0; 
-    padding: 0; 
-    list-style-type: none; 
+.contents{
+    height: 300px;
+    overflow: auto;
+    margin: 20px 0;
 }
-#sidenav a {
-    color: black;
-    display: block;
+.btn{
+    background: none;
+    border: solid yellow 2px;
+    width: 100%;
+    margin: 5px 0;
+    color: #fff;
     text-decoration: none;
-    padding: 10px;
-    height: 50px;
 }
-#sidenav header { 
-    background: rgb(31, 31, 31); 
-    display: block;
-    height: 128px;
-    color: white;
-    background-image: url(../images/top_logo.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    /*background-size: 200px auto;*/
-}
-#sidenav a:hover { 
-    background-color: wheat;
-    color: violet;
-    border-bottom: solid 1px #ccc;
+.btn:hover{
+    color: #fff;
     font-weight: bold;
 }
-#sidenav li{
-    border-bottom: solid 1px #ccc;
-    text-align: center;
-    height: 50px;
+.btn:nth-child(3){
+    width: 48%;
+    float: left;
 }
-.arrows{
+.btn:nth-child(4){
+    width: 48%;
     float: right;
-    width: 20px;
 }
-
+/* 아이디 css */
+#body{
+    background:rgba(0,0,0,1);
+}
 /* 애니메이션 */
 @keyframes aniBackground{
     0%   {background-image: url(../images/main_visual_img03.gif);}
