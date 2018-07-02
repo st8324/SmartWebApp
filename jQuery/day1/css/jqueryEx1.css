@@ -1,0 +1,16 @@
+/* animated 필터 예제 */
+.animated{
+    background-color: antiquewhite;
+    margin : 0px 5px;
+    width: 100px;
+    height: 100px;
+    border: 1px solid green;
+    display: inline-block;
+}
+.animated.colored{
+    background-color: green;
+}
+/* focus 필터 예제 */
+.focused{
+    background: green;
+}
