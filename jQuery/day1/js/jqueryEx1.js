@@ -49,12 +49,17 @@ $("#contents").delegate("*", "focus blur",function(){
     },0);
 });
 
-// header 예제
+// header 필터 예제
 // id가 header 요소에서 header 태그(h1, h2,...,h6)의 css를 수정한다.
 $("#header :header").css({background:"#ccc",color:"blue"});
 
-// lang() 예제
+// lang() 필터 예제
 // 언어가 en-us(영어) 이면 usa 클래스를 추가
 $("#lang div:lang(en-us)").addClass("usa");
 // 언어가 en-es(스페인) 이면 spain 클래스를 추가
 $("#lang div:lang(en-es)").addClass("spain");
+
+// not() 필터 예제
+// input 태그 중 checked상태가 아닌(check표시가 없는) 요소가 있는 span 태그에
+// 배경색을 노란색으로 적용한다.
+$("input:not(:checked) + span").css("background-color","yellow");
