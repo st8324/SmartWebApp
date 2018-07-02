@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="stylesheet" href="../css/signup.css">
+	<title>Document</title>
+</head>
+<body>
+		<!-- 탭으 이용해서 아이디 > 비밀번호 > 비밀번호 확인 > 이메일 > 제출
+	 	활성화된 input태그는 배경색을 흰색이 아닌 다른색으로 지정
+	 	제출 버튼이 클릭되면 제출 완료 메시지 출력
+	 	해당 페이지에 잇는 input태그의 값들을 초기화 -->
+	<div>
+		<form>
+			<div>
+				<input type="text" id="id" placeholder="아이디" tabindex="1">
+			</div>
+			<div>
+				<input type="password" id="pw" placeholder="비밀번호" tabindex="2">
+			</div>
+			<div>
+				<input type="password" id="pwc" placeholder="비밀번호확인" tabindex="3">
+			</div>
+			<div>
+				<input type="email" id="email" placeholder="이메일" tabindex="4">
+			</div>
+			<button type="submit" tabindex="5">제출</button>
+		</form>
+	</div>
+	<script src="//code.jquery.com/jquery-3.3.1.js"></script>
+	<script src="../js/signup.js"></script>
+</body>
+</html>
