@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Document</title>
+	<link rel="stylesheet" href="../css/jqueryEx3.css">
+</head>
+<body>
+	<!-- [name |= "value"] 예제 -->
+	<div id="orAttr">
+		<input type="text" name="inputName">
+		<input type="text" name="inputName test">
+		<input type="text" name="inputName-test">
+		<input type="text" name="test inputName">
+		<input type="text" name="testinputName">
+		<input type="text" id="test1" name="test inputNames">
+	</div>
+	<!-- [name *= "value"] 예제 -->
+	<div id="mulAttr">
+		<input type="text" name="inputName">
+		<input type="text" name="inputName test">
+		<input type="text" name="inputName-test">
+		<input type="text" name="test inputName">
+		<input type="text" name="testinputName">
+		<input type="text" id="test2" name="test inputNam">
+	</div>
+
+	<!-- [name ~= "value"] 예제 -->
+	<div id="notAttr1">
+		<input type="text" name="inputName">
+		<input type="text" name="inputName test">
+		<input type="text" name="inputName-test">
+		<input type="text" name="test inputName">
+		<input type="text" name="testinputName">
+		<input type="text" id="test3" name="test inputNam">
+	</div>
+
+	<!-- [name != "value"] 예제 -->
+	<div id="notAttr2">
+		<input type="text" name="inputName">
+		<input type="text" name="inputName test">
+		<input type="text" name="inputName-test">
+		<input type="text" name="test inputName">
+		<input type="text" name="testinputName">
+		<input type="text" id="test4" name="test inputNam">
+	</div>
+
+	<!-- [name $= "value"] 예제 -->
+	<div id="endAttr">
+		<input type="text" name="inputName">
+		<input type="text" name="inputName test">
+		<input type="text" name="inputName-test">
+		<input type="text" name="test inputName">
+		<input type="text" name="testinputName">
+		<input type="text" id="test5" name="test inputNam">
+	</div>
+
+	<!-- [name $= "value"] 예제 -->
+	<div id="beginAttr">
+		<input type="text" name="inputName">
+		<input type="text" name="inputName test">
+		<input type="text" name="inputName-test">
+		<input type="text" name="test inputName">
+		<input type="text" name="testinputName">
+		<input type="text" id="test6" name="test inputNam">
+	</div>
+
+	<!-- [name $= "value"] 예제 -->
+	<div id="idAttr">
+		<input type="text" name="inputName">
+		<input type="text" name="inputName test">
+		<input type="text" name="inputName-test">
+		<input type="text" name="test inputName">
+		<input type="text" name="testinputName">
+		<input type="text" id="test7" name="test inputNam">
+	</div>
+	
+	<script src="//code.jquery.com/jquery-3.3.1.js"></script>
+	<script src="../js/jqueryEx3.js"></script>
+</body>
+</html>
