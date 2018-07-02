@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="stylesheet" href="../css/jqueryEx2.css">
+	<title>Document</title>
+</head>
+<body>
+	<!-- child 계층 예제 -->
+	<div id="child">
+		<ul>
+			<li> Item1</li>
+			<li> Item2</li>
+			<li> Item3
+				<ul>
+						<li>Item3-1</li>
+						<li>Item3-2</li>
+						<li>Item3-3</li>
+				</ul>
+			</li>
+		</ul>
+	</div>
+	<!-- 자손 계층 예제 -->
+	<div id="descendant">
+		<ul>
+			<li> Item1</li>
+			<li> Item2</li>
+			<li> Item3
+				<ul>
+						<li>Item3-1</li>
+						<li>Item3-2</li>
+						<li>Item3-3</li>
+				</ul>
+			</li>
+		</ul>
+	</div>
+	<!-- Adjacent(인접) 계층 예제 -->
+	<div id="adjacent">
+		<input type="radio" name="gender" id="" checked>
+		<span>남자</span>
+		<input type="radio" name="gender" id="">
+		<span>여자</span>
+	</div>
+	<!-- Siblings(형제) 계층 예제 -->
+	<div id="siblings">
+		<div>div</div>
+		<span>span</span>
+		<p>p</p>
+		<h1>h1</h1>
+	</div>
+	<script src="//code.jquery.com/jquery-3.3.1.js"></script>
+	<script src="../js/jqueryEx2.js"></script>
+</body>
+</html>
