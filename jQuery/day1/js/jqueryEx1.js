@@ -63,3 +63,8 @@ $("#lang div:lang(en-es)").addClass("spain");
 // input 태그 중 checked상태가 아닌(check표시가 없는) 요소가 있는 span 태그에
 // 배경색을 노란색으로 적용한다.
 $("input:not(:checked) + span").css("background-color","yellow");
+
+// root 필터 예제
+//b태그에 html 문자열($(":root")[0].nodeName)을 넣고 해당 태그를 아이디가
+//log은 요소에 붙인다.
+$("<b></b>").html($(":root")[0].nodeName).appendTo("#log");
