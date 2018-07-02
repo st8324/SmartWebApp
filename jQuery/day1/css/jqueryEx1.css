@@ -14,3 +14,11 @@
 .focused{
     background: green;
 }
+
+/* lang() 예제 */
+.usa{
+    color: red;
+}
+.spain{
+    color: blue;
+}

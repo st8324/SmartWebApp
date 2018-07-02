@@ -41,10 +41,20 @@ animatedIt();
 $("#contents").delegate("*", "focus blur",function(){
     // 이벤트가 발생된 객체의 정보를 element 저장한다.
     var element = $(this);
-    // 함수를 setTimeout함수에 등록한다.
+    // 함수가 0초뒤에 실행되도록 setTimeout함수에 등록한다.
     setTimeout(function(){
         // 객체에 focused 클래스가 있으면 제거, 없으면 추가하는데 
         // 객체가 focus된 상태이면
         element.toggleClass("focused", element.is(":focus"));
     },0);
 });
+
+// header 예제
+// id가 header 요소에서 header 태그(h1, h2,...,h6)의 css를 수정한다.
+$("#header :header").css({background:"#ccc",color:"blue"});
+
+// lang() 예제
+// 언어가 en-us(영어) 이면 usa 클래스를 추가
+$("#lang div:lang(en-us)").addClass("usa");
+// 언어가 en-es(스페인) 이면 spain 클래스를 추가
+$("#lang div:lang(en-es)").addClass("spain");
