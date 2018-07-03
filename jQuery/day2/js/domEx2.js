@@ -36,3 +36,13 @@ $(".container .inner").first().prepend("<button>프리팬드</button>");
 // 들어간다.
 $(".container2 .inner").last().before("<button>Before</button>");
 $(".container2 .inner").last().after("<button>After</button>");
+// 사과 css
+$(".define").css("border", "1px solid black");
+$(".define").css("text-align", "center");
+$(".define").click(function(){
+    $(".define").after("<div id='explain'>apple</div>");
+    $("#explain").css("border", "1px solid black");
+    $("#explain").css("text-align", "center");
+    $("#explain").css("margin", "10px 0");
+    $("#explain").height("100px");
+});
