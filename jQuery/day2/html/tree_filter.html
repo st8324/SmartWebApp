@@ -9,11 +9,13 @@
 <body>
     <style>
     .filter>div{
-        width: 60px;
-        height: 60px;
+        width: 80px;
+        height: 80px;
         border: solid black 1px;
         margin: 5px;
         display: inline-block;
+        box-sizing: border-box;
+        -webkit-box-sizing: border-box;
     }
     .yellow{
         background-color: yellow;
@@ -25,7 +27,7 @@
         <div>index 2</div>
         <div>index 3</div>
         <div>index 4</div>
-        <div>index 5</div>
+        <div><span>index 5</span></div>
     </div>
     <script src="//code.jquery.com/jquery-3.3.1.js"></script>
     <script src="../js/tree_filter.js"></script>
