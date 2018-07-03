@@ -1,0 +1,20 @@
+@charset 'utf-8';
+
+.filter>div{
+    width: 80px;
+    height: 80px;
+    margin: 10px;
+    padding: 20px 0;
+    border: solid 1px black;
+    text-align: center;
+    display: inline-block;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+.red    {   background-color: red;      }
+.orange {   background-color: orange;   }
+.yellow {   background-color: yellow;   }
+.green  {   background-color: green;    }
+.blue   {   background-color: blue;     }
+.indigo {   background-color: indigo;   }
+.purple {   background-color: purple;   }
