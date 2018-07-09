@@ -6,5 +6,7 @@ $("tbody > tr").on("click",function(){
     제외한 모든 요소에 font-red 클래스를 제거한다.
     */
     $(this).addClass("font-red");
+    $(this).find("input").prop("checked", true);
     $("tbody > tr").not(this).removeClass("font-red");
+    //$("tbody > tr").not(this).find("input").prop("checked",false);
 });
