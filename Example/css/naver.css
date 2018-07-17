@@ -31,7 +31,6 @@ a:visited{
 .container-middle{
     height: 300px;
     margin: 8px 0 0 0;
-    border: 1px solid red;
 }
 .container-begin .right-box{
     background: white;
@@ -186,4 +185,22 @@ a:visited{
 }
 .security-tmp{
     border-top: none;
+}
+.news{
+    height: 46px;
+    border: green solid 1px;
+}
+.news-stand{
+    height: 246px;
+    margin: 8px 0 0 0;
+    border: purple solid 1px;
+}
+.etc{
+    height: 142px;
+    border: green solid 1px;
+}
+.add{
+    margin: 8px 0 0 0;
+    height: 150px;
+    border: purple solid 1px;
 }
