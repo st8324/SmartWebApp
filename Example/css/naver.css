@@ -1,39 +1,189 @@
 @charset 'utf-8';
+/* 모든 태그에 적용할 css */
 *{
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
     box-sizing: border-box;
+    -webkit-box-sizing: border-box;
 }
-body{
-    margin: 0;
+a,
+a:hover,
+a:visited{
+    text-decoration: none;
+    color: black;
 }
-.container{
+
+.container-header{
     width: 1080px;
-    border: solid black 1px;
+    height: 218px;
     margin: 0 auto;
+}
+.container-contents{
+    width: 1100px;
+    height: 436px;
+    margin: 0 auto;
+    padding: 10px;
+    background: gainsboro;
+}
+.container-begin{
+    height: 120px;
+}
+.container-middle{
+    height: 300px;
+    margin: 8px 0 0 0;
+    border: 1px solid red;
+}
+.container-begin .right-box{
+    background: white;
+}
+.header-search{
+    height: 170px;
     position: relative;
 }
-.header{
-    height: 178px;
+.header-menu{
+    border: 2px solid gray;
+    height: 48px;
 }
-.logo{
-    height: 130px;
+.header-logo{
+    position: relative;
+    height: 100%;
 }
-.logo h1{
+.header-searching{
     position: absolute;
     top: 50%;
-    margin-top: -24px;
-    left: -2px;
+    left: 219px;
+    margin-top: -18px;
+    width: 521px;
+    border: 3px solid green;
 }
-.naver-logo{
-    width: 202px;
-    height: 57px;
-    background-position: 0 0;
-    background-image: url(https://s.pstatic.net/static/www/img/2018/sp_main_v180508.png);
-    background-repeat: no-repeat;
-    display: block;
-    overflow: hidden;
-    text-indent: 102%;
-    font-size: 2.5em;
+.header-link{
+    position: absolute;
+    top: 11px;
+    right: 0px;
+    font-size: 12px;
+    zoom: 1;
+}
+.header-promotion{
+    position: absolute;
+    top: 50%;
+    right: 0;
+    margin-top: -18px;
+}
+.search-container{
+    height: 41px;
+    margin: 2px;
+    display: inline-block;
+}
+.search-input{
+    margin: 11px 0 0 9px;
+    width: 405px;
+    height: 23px;
+    outline: 0;
+    border: 0;
+    background-color: transparent;
+    color: #000;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 23px;
+}
+.search-btn{
+    display: inline-block;
+    float: right;
+    width: 45px;
+    height: 45px;
+    text-align: center;
+    font-size: 26px;
+    padding: 3px 0 0 0;
+    color: white;
+    background: green;
+}
 
+.center{
+    display: inline-block;
+    margin : 9px 0 0 2px;
+    font-weight: 900;
+}
+.color-green{
+    color: green;
+}
+.color-black{
+    color:black;
+}
+.color-gray{
+    color:gainsboro;
+}
+.realtime-search{
+    display: inline-block;
+    float: right;
+    height: 48px;
+    width: 200px;
+    padding: 9px 0 0 0;
+}
+.realtime-search i{
+    float: right;
+    margin: 5px 10px 0 0;
+}
+.left-box{
+    height: 100%;
+    width: 740px;
+    border: 1px solid red;
+    display: inline-block;
+}
+.right-box{
+    height: 100%;
+    width: 332px;
+    border: 1px solid blue;
+    display: inline-block;
+    float: right;
+}
+.container-login{
+    width: 300px;/* 332 - 2(border*2) - 30(15*2) */
+    height: calc(100% - 2px - 30px);
+    margin: 15px;
+}
+.login{
+    width: 210px;
+    height: 56px;
+    display: inline-block;
+}
+.security{
+    width: 80px;
+    height: 56px;
+    display: inline-block;
+    float: right;
+}
+.login-etc{
+    margin: 4px 0 0 0;
+    font-size: 12px; 
+}
+.id-input,
+.pw-input{
+    width: 154px;
+    height: 28px; 
+    border: solid 1px gray;
+}
+.login-input{
+    width: 154px;
+    display: inline-block;
+    height: 100%;
+}
+.login-btn{
+    width: 56px;
+    height: 100%;
+    display: inline-block;
+    float: right;
+    background: green;
+}
+.id-input{
+   border-bottom-style: none;
+}
+.security-ip,
+.security-tmp{
+    height: 28px;
+    width: 100%;
+    border: solid 1px gray;
+    text-align: center;
+}
+.security-tmp{
+    border-top: none;
 }
