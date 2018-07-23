@@ -5,7 +5,10 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+	<link rel="stylesheet" href="../css/realtimeSearch.css">
 	<link rel="stylesheet" href="../css/naver.css">
+	<script src="//code.jquery.com/jquery-3.3.1.js"></script>
+	<script src="../js/realtimeSearch.js"></script>
 	<script src="../js/naver.js"></script>
 	<title>Document</title>
 </head>
@@ -26,17 +29,22 @@
 				<a href="">해피빈</a>
 			</div>
 			<!-- 검색창 -->
-			<div class="header-searching">
+			<div class="header-searching row">
 				<!-- 검색어입력창 -->
 				<span class="search-container">
 					<input type="text" class="search-input">
 				</span>
 				<i class="fas fa-keyboard"></i>
-				<i class="fas fa-angle-down"></i>
+				<div id="autoSearch">
+					<i class="fas fa-angle-down" ></i>
+				</div>
 				<!-- 검색버튼 -->
 				<div class="search-btn">
 					<i class="fas fa-search"></i>
 				</div>
+			</div>
+			<div id="search-hidden">
+				검색어
 			</div>
 			<!-- 프로모션 -->
 			<div class="header-promotion">
@@ -67,12 +75,50 @@
 			<span class="center color-gray">|</span>
 			<span class="center color-black">더보기</span>
 			<div class="realtime-search">
-				<span>여기에다 실시간 검색</span>
-				<i class="fas fa-angle-down"></i>
+				<div id="content">
+					<dl id="rank-list">
+						<dt>실시간 급상승 검색어</dt>
+						<dd>
+							<ol>
+								<li><a href="#">1 순위</a></li>
+								<li><a href="#">2 순위</a></li>
+								<li><a href="#">3 순위</a></li>
+								<li><a href="#">4 순위</a></li>
+								<li><a href="#">5 순위</a></li>
+								<li><a href="#">6 순위</a></li>
+								<li><a href="#">7 순위</a></li>
+								<li><a href="#">8 순위</a></li>
+								<li><a href="#">9 순위</a></li>
+								<li><a href="#">10 순위</a></li>
+							</ol>
+						</dd>
+					</dl>
+				</div>
+				<div class="search-hover" >
+					<dl >
+						<dt>실시간 급상승 검색어</dt>
+						<dd>
+							<ol>
+								<li><a href="#">1 순위</a></li>
+								<li><a href="#">2 순위</a></li>
+								<li><a href="#">3 순위</a></li>
+								<li><a href="#">4 순위</a></li>
+								<li><a href="#">5 순위</a></li>
+								<li><a href="#">6 순위</a></li>
+								<li><a href="#">7 순위</a></li>
+								<li><a href="#">8 순위</a></li>
+								<li><a href="#">9 순위</a></li>
+								<li><a href="#">10 순위</a></li>
+							</ol>
+						</dd>
+					</dl>
+				</div>
+				<i class="fas fa-angle-down" id="realSearch"></i>
 			</div>
 		</div>
 	</div>
 	<!-- 컨텐츠 박스 -->
+	<div class="container">
 	<div class="container-contents">
 		<div class="container-begin">
 			<div class="left-box">
@@ -108,7 +154,19 @@
 				<div class="news">
 					<div id="newsList">
 						<div>연합뉴스 > </div>
-						<div>뉴스 리스트</div>
+						<div id="content2">
+							<dl id="rank-list2">
+								<dt>실시간 급상승 검색어</dt>
+								<dd>
+									<ol>
+										<li><a href="#">1 순위</a></li>
+										<li><a href="#">2 순위</a></li>
+										<li><a href="#">3 순위</a></li>
+										<li><a href="#">4 순위</a></li>
+									</ol>
+								</dd>
+							</dl>
+						</div>
 					</div>
 					<div id="newsMenu">
 						<a href="#" class="color-green">네이버 뉴스</a>
@@ -234,6 +292,7 @@
 				</div>
 			</div>
 		</div>
+	</div>
 	</div>
 
 </body>
