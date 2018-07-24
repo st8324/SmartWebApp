@@ -339,3 +339,23 @@ a.color-green,
 /* #happyBean:hover{
     color: green;
 } */
+.logo{ 
+    height: 130px; 
+} 
+.logo h1{ 
+    position: absolute; 
+    top: 50%; 
+    margin-top: -24px; 
+    left: -2px; 
+} 
+.naver-logo{ 
+    width: 202px; 
+    height: 57px; 
+    background-position: 0 0; 
+    background-image: url(https://s.pstatic.net/static/www/img/2018/sp_main_v180508.png); 
+    background-repeat: no-repeat; 
+    display: block; 
+    overflow: hidden; 
+    text-indent: 100%; 
+    font-size: 2.5em; 
+ }
