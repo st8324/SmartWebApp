@@ -291,6 +291,7 @@ a.color-green,
     border: solid 1px gray;
 }
 .container{
+    position: relative;
     background: gainsboro;
 }
 #search-hidden{
@@ -362,4 +363,22 @@ a.color-green,
  .display-none{
      display: none;
  }
+ #menu-contents{
+     position: absolute;
+     top: 0;
+     left: 0;
+     height: 400px;
+     width: 100%;
+     background: white;
+     z-index: 5;
+ }
+ #more,
+ #more:hover{
+    cursor: pointer;
+ }
+ .dark{
+     opacity: 0.5;
+     background: #000;
+ }
+ 
  

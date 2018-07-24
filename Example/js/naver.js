@@ -9,4 +9,10 @@ $(document).ready(function(){
         $('#happy').toggleClass('green');
         $('#bean').toggleClass('lightgreen');
     })
+    $('#more').click(function(){
+        $('#menu-contents').toggleClass('display-none');
+        $('.container').toggleClass('dark');
+        $('.more-up').toggleClass('display-none');
+        $('.more-down').toggleClass('display-none');
+    });
 });
