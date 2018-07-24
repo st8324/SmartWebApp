@@ -45,9 +45,9 @@ $(function() {
 });
 $(document).ready(function(){
     $("#rank-list a").hover(function(){
-       $(".search-hover").toggleClass('display-block');
-    })
-    $("#autoSearch").click(function(){
-        $("#search-hidden").toggleClass('display-block');
-    })
+        $(".search-hover").toggleClass('display-block');
+     });
+     $("#autoSearch").click(function(){
+         $("#search-hidden").toggleClass('display-block');
+     });
 });

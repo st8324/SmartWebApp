@@ -306,3 +306,36 @@ a.color-green,
 #search-hidden.display-block{
     display: block;
 }
+#goToNaver{
+    font-size: 11px;
+    color: #888;
+}
+#goToNaver:hover{
+    text-decoration: underline;
+}
+#naverJunior{
+    font-weight: bold;
+    color: #999;
+}
+.red{
+    color: red;
+}
+.blue{
+    color: blue;
+}
+.orange{
+    color: orange;
+}
+.green{
+    color: green;
+}
+#happyBean{
+    color: #999;
+    font-weight: bold;
+}
+.lightgreen{
+    color: lightgreen;
+}
+/* #happyBean:hover{
+    color: green;
+} */

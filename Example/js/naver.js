@@ -1,0 +1,12 @@
+$(document).ready(function(){
+    $('#naverJunior').hover(function(){
+        $('#red').toggleClass('red');
+        $('#blue').toggleClass('blue');
+        $('#orange').toggleClass('orange');
+        $('#green').toggleClass('green');
+    });
+    $('#happyBean').hover(function(){
+        $('#happy').toggleClass('green');
+        $('#bean').toggleClass('lightgreen');
+    })
+});
