@@ -14,5 +14,7 @@ $(document).ready(function(){
         $('.container').toggleClass('dark');
         $('.more-up').toggleClass('display-none');
         $('.more-down').toggleClass('display-none');
+        $('#btns').toggleClass('display-none');
+        $('.realtime-search').toggleClass('display-none');
     });
 });
