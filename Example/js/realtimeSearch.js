@@ -49,5 +49,7 @@ $(document).ready(function(){
      });
      $("#autoSearch").click(function(){
          $("#search-hidden").toggleClass('display-block');
+         $(".up").toggleClass('display-none');
+         $(".down").toggleClass('display-none');
      });
 });
