@@ -101,6 +101,9 @@
     text-align: center;
     font-size: 17px;
     padding-top: 8px;
+    overflow: hidden;
+    text-overflow: clip;
+    white-space: nowrap;
 }
 
 .menu>.row>.sub-menu:nth-child(1){
