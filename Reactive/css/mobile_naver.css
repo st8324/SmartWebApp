@@ -11,7 +11,6 @@ div{
 .container{
     border: none;
     width: 100%;
-    font-size: 0;
 }
 .search{
     width: 100%;
@@ -25,59 +24,42 @@ div{
     margin-top: 10px;
     display: inline-block;
     width: 100%;
+    position: absolute;
 }
-.contents:after {
-    display: block;
-    clear: both;
-    content: '';
+.container-contents{
+    font-size: 0;
+    position: relative;
 }
-.container *{
+.container-contents *{
     font-size: 14px;
 }
-.one{
-    height: 300px;
-}
-.two{
-    height: 50px;
-}
-.three{
-    height: 80px;
-}
-.four{
-    height: 50px;
-}
-.five{
-    height: 200px;
-}
-.six{
-    height: 150px;
-}
-.seven{
-    height: 100px;
-}
+.contents:nth-child(1){ height: 100px;   }
+.contents:nth-child(2){ height: 200px;   }
+.contents:nth-child(3){ height: 300px;   }
+.contents:nth-child(4){ height: 150px;   }
+.contents:nth-child(5){ height: 80px;   }
+.contents:nth-child(6){ height: 70px;   }
+.contents:nth-child(7){ height: 200px;   }
+
 @media (max-width:639px){
     .contents{
         width: 100%;
     }
+    .contents:nth-child(1){ top: 0px;   }
+    .contents:nth-child(2){ top: 110px;   }
+    .contents:nth-child(3){ top: 320px;   }
+    .contents:nth-child(4){ top: 630px;   }
+    .contents:nth-child(5){ top: 790px;   }
+    .contents:nth-child(6){ top: 880px;   }
+    .contents:nth-child(7){ top: 960px;   }
 }
 @media (min-width:640px){
     .contents{
         width: calc(100% / 2 - 1px);
-        margin-right: 1px;
     }
 }
 @media (min-width:1024px){
     .contents{
         width: calc(100% / 3 - 1px);
-        margin-right: 1px;
-    }
-    .contents :nth-child(3n+1){
-        float: left;
-    }
-    .contents :nth-child(3n+2){
-        float: center;
-    }
-    .contents :nth-child(3n){
-        float: right;
     }
 }
