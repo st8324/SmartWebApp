@@ -204,3 +204,39 @@
     .contents:nth-child(6){ top: 215px;   }
     .contents:nth-child(7){ top: 300px;   }
 }
+
+.contents>.content1{ 
+    height: 41px;
+    padding: 10px 15px 11px 15px;
+}
+.contents>.content1>.inner-content1{
+    height: 31px;
+    border-bottom: 1px solid rgb(242, 242, 242);
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.btn-sky{
+    background-color: rgb(129, 169, 219);
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    height: 21px;
+    padding: 0 5px;
+    margin: 13px 10px 0 15px;
+    font-size: 12px;
+}
+.btn-dropdown{
+    float: right;
+    margin: 10px 15px 0 0;
+    cursor: pointer;
+}
+.btn-dropdown>i{
+    font-size: 30px;
+}
+.realtime-search{
+    width: calc(100% - 156px);
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
